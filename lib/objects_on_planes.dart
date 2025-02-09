@@ -120,12 +120,12 @@ class _ObjectsOnPlanesState extends State<ObjectsOnPlanes> {
 }
 
 Future<void> placeObjectImmediately() async {
-  var newNode = ARNode(
-    type: NodeType.webGLB,
-    uri: "https://github.com/KhronosGroup/glTF-Sample-Models/raw/refs/heads/main/2.0/Duck/glTF-Binary/Duck.glb",
-    scale: Vector3(0.2, 0.2, 0.2),
-    position: Vector3(0.0, 0.0, -2.0), // 10 meters in front of user
-    rotation: Vector4(1.0, 0.0, 0.0, 0.0),
+  var  newNode = ARNode(
+    type: NodeType.webGLB,  // Load from assets
+    uri: "https://raw.githubusercontent.com/juneroy1/arcoreflutter1/main/assets/models/Arrow.glb", // Local file path
+     scale: Vector3(0.05, 0.05, 0.05), // Reduces size by half
+    position: Vector3(-0.5, 0.0, -2.0), // 10 meters in front of user
+     rotation: Vector4(1.0, 0.2, 0.0, -1.57)
   );
 
   bool? didAddNode = await arObjectManager?.addNode(newNode);
@@ -139,12 +139,12 @@ Future<void> placeObjectImmediately() async {
   }
 
 
-   newNode = ARNode(
-    type: NodeType.webGLB,
-    uri: "https://github.com/KhronosGroup/glTF-Sample-Models/raw/refs/heads/main/2.0/Duck/glTF-Binary/Duck.glb",
-    scale: Vector3(0.2, 0.2, 0.2),
-    position: Vector3(0.0, 0.0, -3.0), // 10 meters in front of user
-    rotation: Vector4(1.0, 0.0, 0.0, 0.0),
+  newNode = ARNode(
+    type: NodeType.webGLB,  // Load from assets
+    uri: "https://raw.githubusercontent.com/juneroy1/arcoreflutter1/main/assets/models/Arrow.glb", // Local file path
+     scale: Vector3(0.08, 0.08, 0.08), // Reduces size by half
+    position: Vector3(-0.5, 0.0, -5.0), // 10 meters in front of user
+     rotation:  Vector4(1.0, 0.2, 0.0, -1.57)
   );
 
    didAddNode = await arObjectManager?.addNode(newNode);
@@ -158,11 +158,11 @@ Future<void> placeObjectImmediately() async {
   }
 
    newNode = ARNode(
-    type: NodeType.webGLB,
-    uri: "https://github.com/KhronosGroup/glTF-Sample-Models/raw/refs/heads/main/2.0/Duck/glTF-Binary/Duck.glb",
-    scale: Vector3(0.2, 0.2, 0.2),
-    position: Vector3(0.0, 0.0, -4.0), // 10 meters in front of user
-    rotation: Vector4(1.0, 0.0, 0.0, 0.0),
+    type: NodeType.webGLB,  // Load from assets
+    uri: "https://raw.githubusercontent.com/juneroy1/arcoreflutter1/main/assets/models/Arrow.glb", // Local file path
+    scale: Vector3(0.08, 0.08, 0.08),  // Reduces size by half
+    position: Vector3(-0.5, 0.0, -8.0), // 10 meters in front of user
+     rotation:  Vector4(1.0, 0.2, 0.0, -1.57)
   );
 
    didAddNode = await arObjectManager?.addNode(newNode);
@@ -177,11 +177,11 @@ Future<void> placeObjectImmediately() async {
 
 
    newNode = ARNode(
-    type: NodeType.webGLB,
-    uri: "https://github.com/KhronosGroup/glTF-Sample-Models/raw/refs/heads/main/2.0/Duck/glTF-Binary/Duck.glb",
-    scale: Vector3(0.2, 0.2, 0.2),
-    position: Vector3(0.0, 0.0, -5.0), // 10 meters in front of user
-    rotation: Vector4(1.0, 0.0, 0.0, 0.0),
+    type: NodeType.webGLB,  // Load from assets
+    uri: "https://raw.githubusercontent.com/juneroy1/arcoreflutter1/main/assets/models/Arrow.glb", // Local file path
+    scale: Vector3(0.08, 0.08, 0.08),  // Reduces size by half
+    position: Vector3(-0.5, 0.0, -11.0), // 10 meters in front of user
+     rotation:  Vector4(1.0, 0.2, 0.0, -1.57)
   );
 
    didAddNode = await arObjectManager?.addNode(newNode);
@@ -197,11 +197,11 @@ Future<void> placeObjectImmediately() async {
     // uri: "https://github.com/KhronosGroup/glTF-Sample-Models/raw/refs/heads/main/2.0/Duck/glTF-Binary/Duck.glb",
   newNode = ARNode(
    
-    type: NodeType.localGLTF2,  // Load from assets
-    uri: "assets/models/Arrow.glb", // Local file path
-    scale: Vector3(0.2, 0.2, 0.2),
-    position: Vector3(0.0, 0.0, -6.0), // 10 meters in front of user
-    rotation: Vector4(1.0, 0.0, 0.0, 0.0),
+    type: NodeType.webGLB,  // Load from assets
+    uri: "https://raw.githubusercontent.com/juneroy1/arcoreflutter1/main/assets/models/Arrow.glb", // Local file path
+    scale: Vector3(0.08, 0.08, 0.08),  // Reduces size by half
+    position: Vector3(-0.5, 0.0, -14.0), // 10 meters in front of user
+    rotation:  Vector4(1.0, 0.2, 0.0, -1.57)
   );
 
    didAddNode = await arObjectManager?.addNode(newNode);
